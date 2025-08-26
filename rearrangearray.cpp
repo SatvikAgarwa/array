@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void bruteForce(vector <int> &arr) {
+void equalNumberOfNegativeAndPositive(vector <int> &arr) {
     int n = arr.size();
     vector <int> arr_p;
     vector <int> arr_n;
@@ -19,7 +19,7 @@ void bruteForce(vector <int> &arr) {
     }
 }
 
-void second_variant(vector <int> arr) {
+void variablePositiveAndNNegative(vector <int> arr) {
     int n = arr.size();
     vector <int> arr_p;
     vector <int> arr_n;
@@ -42,7 +42,7 @@ void second_variant(vector <int> arr) {
 
 int main() {
     vector<int> arr = {3, 1, -2, -5, 2, 4};
-    bruteForce(arr);
+    variablePositiveAndNNegative(arr);
     for (int i = 0; i < arr.size(); i++) {
         cout << arr[i] << " ";
     }
